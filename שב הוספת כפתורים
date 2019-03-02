@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>I Love HTML</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+        <body>
+        
+       <p> 
+           a =<input type="number"id="ainput"value="0" />
+        </p>
+        <p>
+            b=<input type="number"id="binput"value="0"/>
+         </p>
+        <button onclick = "add()"> + </button>
+    <button onclick="double()"> *  </button> 
+    <button onclick="Subtraction()"> -  </button>
+    <button onclick="Division()"> /  </button>
+    <button onclick=" whobigger()"> whobigger  </button>
+    </body>
+
+        <script>
+        function add (){
+        var a= +$('#ainput').val();
+        var b= +$('#binput').val();
+        alert(a+b);
+        }
+        function double(){
+
+            var a= +$('#ainput').val();
+        var b= +$('#binput').val();
+        alert(a*b);
+
+
+        }
+        function Subtraction(){
+
+var a= +$('#ainput').val();
+var b= +$('#binput').val();
+alert(a-b);
+
+
+
+}
+
+function Division(){
+var a= +$('#ainput').val();
+var b= +$('#binput').val();
+alert(a/b);
+
+
+
+}
+function whobigger(){
+var a= +$('#ainput').val();
+var b= +$('#binput').val();
+if (a>b){
+    alert(1)
+
+}
+else {
+    alert (2)
+}
+
+
+}
+        
+        </script>
+</html>
